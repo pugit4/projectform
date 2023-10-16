@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Record</h2>
+<form method="POST">
+   {% csrf_token %}
+   {{ form.as_p }}
+     <button type="submit" value="submit">Submit</button>
+</form>
+  <a href="{% url "lf" %}" role='button'>Back to list</a>
+ 
+</body>
+</html>  

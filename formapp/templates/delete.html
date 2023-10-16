@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Record</title>
+</head>
+<body>
+ <h2>Delete Record</h2>
+ <p>Are you sure you want to delete {{ item.firstname }}</p>
+    <form method="POST">
+       {% csrf_token %}
+       <button type="submit" value="submit">Delete</button>
+    </form>
+   <a href="{% url "lf" %}" role="button">back to List</a>
+</body>
+</html>    
+
+    
